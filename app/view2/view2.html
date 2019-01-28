@@ -1,0 +1,9 @@
+<p>This is the block for filtered recipies</p>
+<p>
+    lease choose ingredients
+    <input type="text" name="ingredients" ng-model="ingredients" required>
+    <button type="button" value="Get chosen recipies" ng-click="getSelectedRecipies()"></button>
+</p>
+<div>
+    {{recipiesFiltered}}
+</div>

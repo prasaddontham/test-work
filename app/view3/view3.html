@@ -1,0 +1,14 @@
+<p>This is Log parser</p>
+<p>
+    Please Select Log Type:
+    <select name="logType" ng-model="logType" required>
+      <option value="DEBUG">DEBUG</option>
+      <option value="INFO">INFO</option>
+      <option value="WARN">WARN</option>
+    </select>
+    <input type="number" name="limit" ng-model="limit" required>
+    <button type="button" value="Get Log Messages" ng-click="getSelectedLogs()"></button>
+  <div>
+    {{logsParsed}}
+  </div>
+</p>
